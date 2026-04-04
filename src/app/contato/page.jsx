@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../components/layout/Header';
-import FormContato from '../../components/forms/FormContato';
-import Footer from '../../components/layout/Footer';
-import { siteConfig, getEnderecoCompleto } from '../../config/site';
+import Header from '../../../components/layout/Header';
+import FormContato from '../../../components/forms/FormContato';
+import Footer from '../../../components/layout/Footer';
+import { siteConfig, getEnderecoCompleto } from '../../../config/site';
 
 export default function Contato() {
   return (
