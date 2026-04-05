@@ -4,27 +4,30 @@
 @tailwind utilities;
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-/* CSS Variables - Paleta Técnica Lopes Pinto Advogados */
+/* CSS Variables - Identidade Visual Lopes Pinto Advogados */
 :root {
-  --color-brand-copper: #957B4F;
-  --color-brand-gunmetal: #424144;
-  --color-brand-charcoal: #4E4B4A;
-  --color-brand-charcoal-blue: #48525F;
-  --color-slate-grey: #788593;
-  --color-slate-light: #E5E5E5;
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #E5E5E5;
-  --color-text-muted: #9DA8B8;
-  --color-border: #788593;
-  --font-title: 'Montserrat', sans-serif;
+  --color-black-deep: #0B0B0B;
+  --color-white-pure: #FFFFFF;
+  --color-gold-champagne: #D4C8A8;
+  --color-gray-deep: #2A2A2A;
+  --color-gray-medium: #7A7A7A;
+  --color-champagne-light: #E8DFC9;
+  --font-title: 'Montserrat Alternates', sans-serif;
   --font-body: 'Montserrat', sans-serif;
-  --border-radius-sm: 0.5rem;
-  --border-radius-md: 0.75rem;
-  --border-radius-lg: 1rem;
+  --font-quote: 'Cormorant Garamond', serif;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.25s ease-in-out;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
 }
 
 @layer base {
@@ -34,41 +37,54 @@
 
   html {
     scroll-behavior: smooth;
-    background-color: var(--color-brand-gunmetal);
-    color: var(--color-text-primary);
+    background-color: var(--color-black-deep);
+    color: var(--color-white-pure);
     font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   body {
     margin: 0;
     min-height: 100vh;
-    line-height: 1.6;
+    background-color: var(--color-black-deep);
+    color: var(--color-white-pure);
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-brand-gunmetal);
-    color: var(--color-text-primary);
-    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
-    color: var(--color-text-primary);
+    color: var(--color-white-pure);
     line-height: 1.2;
     margin: 0;
+    font-weight: 600;
   }
 
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+  h4 { font-size: 1.5rem; }
+  h5 { font-size: 1.25rem; }
+  h6 { font-size: 1rem; }
+
   p, span, a, button, input, textarea, select {
-    color: var(--color-text-secondary);
+    color: var(--color-gray-medium);
+  }
+
+  p {
+    line-height: 1.7;
   }
 
   a {
-    color: var(--color-text-secondary);
+    color: var(--color-white-pure);
     text-decoration: none;
     transition: color var(--transition-fast);
   }
 
   a:hover {
-    color: var(--color-brand-copper);
+    color: var(--color-gold-champagne);
   }
 
   ul, ol {
@@ -84,103 +100,132 @@
 
   button {
     font: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
   }
 
   input, textarea, select {
-    background-color: var(--color-brand-charcoal);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-md);
-    color: var(--color-text-primary);
-    padding: 0.9rem 1rem;
+    background-color: var(--color-gray-deep);
+    border: 1px solid var(--color-gold-champagne);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-white-pure);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-family: var(--font-body);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   }
 
   input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: var(--color-brand-copper);
-    box-shadow: 0 0 0 3px rgba(149, 123, 79, 0.18);
+    border-color: var(--color-champagne-light);
+    box-shadow: 0 0 0 2px rgba(212, 200, 168, 0.2);
+  }
+
+  blockquote {
+    font-family: var(--font-quote);
+    font-style: italic;
+    color: var(--color-gold-champagne);
+    border-left: 3px solid var(--color-gold-champagne);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--color-brand-gunmetal);
+    background: var(--color-black-deep);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--color-brand-copper);
-    border-radius: 9999px;
+    background: var(--color-gold-champagne);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-champagne-light);
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold uppercase tracking-widest transition-fast;
-    background-color: var(--color-brand-copper);
-    color: var(--color-brand-gunmetal);
-    border: 1px solid var(--color-brand-copper);
+    @apply inline-flex items-center justify-center px-8 py-4 font-semibold uppercase tracking-widest transition-fast;
+    background-color: var(--color-black-deep);
+    color: var(--color-white-pure);
+    border: 1px solid var(--color-gold-champagne);
+    border-radius: var(--border-radius-sm);
   }
 
   .btn-primary:hover {
-    background-color: rgba(149, 123, 79, 0.95);
+    background-color: var(--color-gold-champagne);
+    color: var(--color-black-deep);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium uppercase tracking-wide transition-fast;
+    background-color: transparent;
+    color: var(--color-white-pure);
+    border: 1px solid var(--color-gold-champagne);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-gold-champagne);
+    color: var(--color-black-deep);
   }
 
   .surface-card {
-    @apply bg-brand-charcoal border rounded-xl shadow-lg transition-normal;
-    border-color: var(--color-border);
-    color: var(--color-text-primary);
+    @apply bg-white border rounded-lg shadow-sm transition-normal;
+    border-color: var(--color-gold-champagne);
+    color: var(--color-black-deep);
   }
 
   .surface-panel {
-    @apply bg-brand-charcoal-blue border rounded-xl;
-    border-color: var(--color-border);
-    color: var(--color-text-primary);
+    @apply bg-gray-deep border rounded-lg;
+    border-color: var(--color-gold-champagne);
+    color: var(--color-white-pure);
   }
 
   .office-name {
-    @apply text-brand-copper font-bold uppercase tracking-[0.35em];
+    @apply text-gold-champagne font-bold uppercase tracking-widest;
   }
 
   .section-title {
-    @apply text-brand-copper uppercase tracking-widest text-2xl md:text-3xl mb-6;
+    @apply text-gold-champagne uppercase tracking-widest text-2xl md:text-3xl mb-8;
+    font-family: var(--font-title);
   }
 
   .text-muted {
-    color: var(--color-text-muted);
+    color: var(--color-gray-medium);
   }
 
-  .text-slate-grey {
-    color: var(--color-slate-grey);
+  .text-gold {
+    color: var(--color-gold-champagne);
   }
 
-  .border-slate-grey {
-    border-color: var(--color-border);
+  .border-gold {
+    border-color: var(--color-gold-champagne);
   }
 
-  .bg-brand-gunmetal {
-    background-color: var(--color-brand-gunmetal);
+  .bg-black-deep {
+    background-color: var(--color-black-deep);
   }
 
-  .bg-brand-charcoal {
-    background-color: var(--color-brand-charcoal);
+  .bg-white-pure {
+    background-color: var(--color-white-pure);
   }
 
-  .bg-brand-charcoal-blue {
-    background-color: var(--color-brand-charcoal-blue);
+  .bg-gray-deep {
+    background-color: var(--color-gray-deep);
   }
 
-  .text-brand-copper {
-    color: var(--color-brand-copper);
+  .text-white-pure {
+    color: var(--color-white-pure);
   }
 
-  .text-text-primary {
-    color: var(--color-text-primary);
-  }
-
-  .text-text-secondary {
-    color: var(--color-text-secondary);
+  .text-gray-medium {
+    color: var(--color-gray-medium);
   }
 }
 

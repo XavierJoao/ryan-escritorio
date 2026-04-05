@@ -41,51 +41,51 @@ const FormContato = () => {
 
   return (
     <form onSubmit={handleSubmit} className="surface-card p-8">
-      <h3 className="text-2xl font-semibold text-text-primary mb-6">Envie sua Mensagem</h3>
-      <div className="mb-4">
-        <label htmlFor="nome" className="block text-text-secondary mb-2">Nome</label>
+      <h3 className="text-2xl font-semibold text-black-deep mb-8 font-montserrat-alternates">Envie sua Mensagem</h3>
+      <div className="mb-6">
+        <label htmlFor="nome" className="block text-gray-medium mb-3 font-medium">Nome</label>
         <input
           type="text"
           id="nome"
           name="nome"
           value={formData.nome}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-slate-grey rounded-lg focus:outline-none focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 bg-brand-charcoal"
+          className="w-full"
           required
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-text-secondary mb-2">Email</label>
+      <div className="mb-6">
+        <label htmlFor="email" className="block text-gray-medium mb-3 font-medium">Email</label>
         <input
           type="email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-slate-grey rounded-lg focus:outline-none focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 bg-brand-charcoal"
+          className="w-full"
           required
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="telefone" className="block text-text-secondary mb-2">Telefone</label>
+      <div className="mb-6">
+        <label htmlFor="telefone" className="block text-gray-medium mb-3 font-medium">Telefone</label>
         <input
           type="tel"
           id="telefone"
           name="telefone"
           value={formData.telefone}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-slate-grey rounded-lg focus:outline-none focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 bg-brand-charcoal"
+          className="w-full"
         />
       </div>
-      <div className="mb-6">
-        <label htmlFor="mensagem" className="block text-text-secondary mb-2">Mensagem</label>
+      <div className="mb-8">
+        <label htmlFor="mensagem" className="block text-gray-medium mb-3 font-medium">Mensagem</label>
         <textarea
           id="mensagem"
           name="mensagem"
           value={formData.mensagem}
           onChange={handleChange}
           rows="5"
-          className="w-full px-4 py-2 border border-slate-grey rounded-lg focus:outline-none focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 bg-brand-charcoal"
+          className="w-full"
           required
         ></textarea>
       </div>

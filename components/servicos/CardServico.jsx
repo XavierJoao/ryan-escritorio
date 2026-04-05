@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 const CardServico = ({ title, description, slug }) => {
   return (
-    <div className="card hover:border-gold-accent transition-fast">
-      <h3 className="text-2xl font-semibold text-gold-accent mb-4">{title}</h3>
-      <p className="text-text-secondary mb-6">{description}</p>
+    <div className="surface-card p-8 hover:shadow-lg transition-normal">
+      <h3 className="text-2xl font-semibold text-gold-champagne mb-6 font-montserrat-alternates">{title}</h3>
+      <p className="text-gray-medium mb-8 leading-relaxed">{description}</p>
       <Link href={`/servicos/${slug}`}>
-        <button className="btn-primary">
+        <button className="btn-secondary">
           Ver mais
         </button>
       </Link>

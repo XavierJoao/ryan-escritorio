@@ -16,35 +16,36 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 bg-brand-gunmetal border-b border-slate-grey">
-      <div className="container mx-auto px-4 md:px-8 py-8">
-        <div className="flex justify-between items-center gap-8">
+    <header className="sticky top-0 z-10 bg-black-deep border-b border-gold-champagne">
+      <div className="container mx-auto px-6 md:px-12 py-6">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <Image
               src="/images/logo/logo.png"
               alt="Logo Lopes Pinto Advogados"
               width={50}
               height={50}
+              className="rounded-sm"
             />
-            <span className="text-[#957B4F] font-bold uppercase tracking-widest">Lopes Pinto Advogados</span>
+            <span className="text-gold-champagne font-bold uppercase tracking-widest text-lg font-montserrat-alternates">Lopes Pinto Advogados</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-10">
-            <Link href="/" className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm">
+          <nav className="hidden md:flex space-x-12">
+            <Link href="/" className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm">
               Home
             </Link>
-            <Link href="/quem-somos" className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm">
+            <Link href="/quem-somos" className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm">
               Quem Somos
             </Link>
-            <Link href="/servicos" className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm">
+            <Link href="/servicos" className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm">
               Serviços
             </Link>
-            <Link href="/noticias" className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm">
+            <Link href="/noticias" className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm">
               Notícias
             </Link>
-            <Link href="/contato" className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm">
+            <Link href="/contato" className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm">
               Contato
             </Link>
           </nav>
@@ -53,7 +54,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-text-secondary hover:text-brand-copper focus:outline-none transition-fast"
+              className="text-white-pure hover:text-gold-champagne focus:outline-none transition-fast"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -68,40 +69,40 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-8 pb-6 border-t border-brand-copper pt-6">
-            <nav className="flex flex-col space-y-6">
+          <div className="md:hidden mt-6 pb-6 border-t border-gold-champagne pt-6">
+            <nav className="flex flex-col space-y-4">
               <Link
                 href="/"
                 onClick={closeMenu}
-                className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm"
+                className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm"
               >
                 Home
               </Link>
               <Link
                 href="/quem-somos"
                 onClick={closeMenu}
-                className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm"
+                className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm"
               >
                 Quem Somos
               </Link>
               <Link
                 href="/servicos"
                 onClick={closeMenu}
-                className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm"
+                className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm"
               >
                 Serviços
               </Link>
               <Link
                 href="/noticias"
                 onClick={closeMenu}
-                className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm"
+                className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm"
               >
                 Notícias
               </Link>
               <Link
                 href="/contato"
                 onClick={closeMenu}
-                className="text-text-secondary hover:text-brand-copper transition-fast font-semibold uppercase tracking-widest text-sm"
+                className="text-white-pure hover:text-gold-champagne transition-fast font-medium uppercase tracking-wider text-sm"
               >
                 Contato
               </Link>
