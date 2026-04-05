@@ -15,19 +15,19 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-dark-primary border-b border-gold-accent">
+    <header className="bg-brand-charcoal-blue border-b border-slate-grey">
       <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" onClick={closeMenu} className="text-text-secondary hover:text-gold-accent transition-fast">
+            <Link href="/" onClick={closeMenu} className="text-text-primary hover:text-brand-copper transition-fast">
               <span className="office-name text-2xl">{siteConfig.nome}</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-12">
-            <Link href="/" className="text-text-secondary hover:text-gold-accent transition-fast font-medium uppercase tracking-widest text-sm">
+            <Link href="/" className="text-text-secondary hover:text-brand-copper transition-fast font-medium uppercase tracking-widest text-sm">
               Home
             </Link>
             <Link href="/quem-somos" className="text-text-secondary hover:text-gold-accent transition-fast font-medium uppercase tracking-widest text-sm">

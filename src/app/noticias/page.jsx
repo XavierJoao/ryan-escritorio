@@ -5,11 +5,11 @@ import Footer from '@/components/layout/Footer';
 
 export default function Noticias() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-brand-gunmetal">
       <Header />
       <div className="py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+          <h1 className="section-title text-center mb-12">
             Notícias
           </h1>
           <ListaNoticiasBlog />

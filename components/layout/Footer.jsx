@@ -8,7 +8,7 @@ const Footer = () => {
   const latestNews = getNoticias().slice(0, 3);
 
   return (
-    <footer className="bg-dark-primary text-text-secondary py-16 border-t border-gold-accent">
+    <footer className="bg-brand-charcoal-blue text-text-secondary py-16 border-t border-slate-grey">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Informações de Contato */}

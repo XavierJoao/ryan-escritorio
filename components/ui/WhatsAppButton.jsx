@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   return (
     <a
       href={`https://wa.me/${siteConfig.contato.whatsapp}`}
-      className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+      className="fixed bottom-4 right-4 bg-brand-copper text-brand-gunmetal p-4 rounded-full shadow-lg hover:bg-brand-copper/90 transition-fast"
       target="_blank"
       rel="noopener noreferrer"
     >
