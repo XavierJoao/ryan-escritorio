@@ -15,35 +15,31 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-black-deep border-b border-gold-champagne">
+      <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" onClick={closeMenu}>
-              <img
-                src="/images/logo.png"
-                alt={siteConfig.nome}
-                className="h-10 w-auto"
-              />
+            <Link href="/" onClick={closeMenu} className="text-white-pure hover:text-gold transition-fast">
+              <span className="text-2xl font-bold text-gold">{siteConfig.nome}</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">
+          <nav className="hidden md:flex space-x-12">
+            <Link href="/" className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm">
               Home
             </Link>
-            <Link href="/quem-somos" className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">
+            <Link href="/quem-somos" className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm">
               Quem Somos
             </Link>
-            <Link href="/servicos" className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">
+            <Link href="/servicos" className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm">
               Serviços
             </Link>
-            <Link href="/noticias" className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">
+            <Link href="/noticias" className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm">
               Notícias
             </Link>
-            <Link href="/contato" className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">
+            <Link href="/contato" className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm">
               Contato
             </Link>
           </nav>
@@ -52,7 +48,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-white-pure hover:text-gold focus:outline-none transition-fast"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -67,40 +63,40 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden mt-8 pb-6 border-t border-gold-champagne pt-6">
+            <nav className="flex flex-col space-y-6">
               <Link
                 href="/"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium py-2"
+                className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm"
               >
                 Home
               </Link>
               <Link
                 href="/quem-somos"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium py-2"
+                className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm"
               >
                 Quem Somos
               </Link>
               <Link
                 href="/servicos"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium py-2"
+                className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm"
               >
                 Serviços
               </Link>
               <Link
                 href="/noticias"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium py-2"
+                className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm"
               >
                 Notícias
               </Link>
               <Link
                 href="/contato"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-blue-600 transition duration-300 font-medium py-2"
+                className="text-white-pure hover:text-gold transition-fast font-medium uppercase tracking-wide text-sm"
               >
                 Contato
               </Link>
