@@ -9,7 +9,7 @@ import Footer from '@/components/layout/Footer';
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-brand-gunmetal">
+    <div className="min-h-screen">
       <Header />
       <Hero />
       <AboutPreview />

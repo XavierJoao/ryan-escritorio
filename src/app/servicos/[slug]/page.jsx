@@ -13,7 +13,7 @@ export default function ServicoPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-brand-gunmetal">
+    <div className="min-h-screen">
       <Header />
       <div className="py-16">
       <div className="container mx-auto px-4 max-w-4xl surface-panel p-10">

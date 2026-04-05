@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 
 const Header = () => {
@@ -19,10 +20,14 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-8 py-8">
         <div className="flex justify-between items-center gap-8">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" onClick={closeMenu} className="text-text-primary hover:text-brand-copper transition-fast">
-              <span className="office-name text-3xl md:text-4xl uppercase tracking-[0.35em] font-bold">{siteConfig.nome}</span>
-            </Link>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/images/logo/logo.png"
+              alt="Logo Lopes Pinto Advogados"
+              width={50}
+              height={50}
+            />
+            <span className="text-[#957B4F] font-bold uppercase tracking-widest">Lopes Pinto Advogados</span>
           </div>
 
           {/* Desktop Navigation */}

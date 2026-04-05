@@ -23,13 +23,13 @@ export default function QuemSomos() {
   ];
 
   return (
-    <div className="min-h-screen bg-brand-gunmetal">
+    <div className="min-h-screen">
       <Header />
       <OfficeDescription />
       <MissionVisionValues />
 
       {/* Seção dos Advogados */}
-      <section className="py-16 bg-brand-gunmetal">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-12">
             Nossa Equipe

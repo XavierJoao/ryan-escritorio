@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesPreview = () => {
   return (
-    <section className="py-16 bg-brand-gunmetal">
+    <section className="py-16">
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="section-title text-center mb-12">
           Nossos Serviços

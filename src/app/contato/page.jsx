@@ -6,7 +6,7 @@ import { siteConfig, getEnderecoCompleto } from '@/config/site';
 
 export default function Contato() {
   return (
-    <div className="min-h-screen bg-brand-gunmetal">
+    <div className="min-h-screen">
       <Header />
       <div className="py-24">
         <div className="container mx-auto px-4">
