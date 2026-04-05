@@ -12,8 +12,8 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-6">
             <Image
-              src="/images/logo/logo.png"
-              alt="Logo Lopes Pinto Advogados"
+              src="/images/logo/logo-header.png"
+              //alt="Logo Lopes Pinto Advogados"
               width={50}
               height={50}
               className="rounded-sm"
