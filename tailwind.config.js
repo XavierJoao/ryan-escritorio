@@ -8,9 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif'],
+        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
+        'dark-primary': '#37373D',
+        'gold-accent': '#C4A467',
+        'text-secondary': '#E5E5E5',
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
