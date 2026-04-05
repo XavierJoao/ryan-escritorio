@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className="bg-black-deep min-h-screen">
+      <body style={{ backgroundColor: '#788593', minHeight: '100vh', color: '#424144', fontFamily: 'Montserrat, sans-serif' }}>
         {children}
       </body>
     </html>
