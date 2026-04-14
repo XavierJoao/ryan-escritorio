@@ -6,7 +6,7 @@ import { siteConfig } from '@/config/site';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50" style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+    <header className="sticky top-0 z-50" style={{ backgroundColor: '#48525e', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
       <div className="container mx-auto px-6 md:px-12 py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
