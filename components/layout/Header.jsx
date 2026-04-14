@@ -5,12 +5,32 @@ import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 
 const Header = () => {
+  // Classe padrão dos links
+  const navLinkClass =
+    "text-white hover:text-[#b89652] transition-all duration-300 font-medium uppercase tracking-wider text-xs";
+
+  // Lista de links
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/quem-somos", label: "Quem Somos" },
+    { href: "/servicos", label: "Serviços" },
+    { href: "/noticias", label: "Notícias" },
+    { href: "/contato", label: "Contato" },
+  ];
+
   return (
-    <header className="sticky top-0 z-50" style={{ backgroundColor: '#48525e', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+    <header
+      className="sticky top-0 z-50"
+      style={{
+        backgroundColor: '#48525e',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+      }}
+    >
       <div className="container mx-auto px-6 md:px-12 py-10">
-        <div className="flex justify-between items-center">
+        <div className="flex items-center gap-12">
+          
           {/* Logo */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center">
             <Image
               src="/images/logo/logo-header00.png"
               alt="Logo Lopes Pinto Advogados"
@@ -22,22 +42,13 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="flex gap-16">
-            <Link href="/" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
-              Home
-            </Link>
-            <Link href="/quem-somos" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
-              Quem Somos
-            </Link>
-            <Link href="/servicos" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
-              Serviços
-            </Link>
-            <Link href="/noticias" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
-              Notícias
-            </Link>
-            <Link href="/contato" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
-              Contato
-            </Link>
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className={navLinkClass}>
+                {link.label}
+              </Link>
+            ))}
           </nav>
+
         </div>
       </div>
     </header>
