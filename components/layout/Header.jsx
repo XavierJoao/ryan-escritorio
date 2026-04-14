@@ -14,8 +14,8 @@ const Header = () => {
             <Image
               src="/images/logo/logo-header00.png"
               alt="Logo Lopes Pinto Advogados"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               className="rounded-sm"
             />
           </div>
