@@ -7,7 +7,7 @@ import { siteConfig } from '@/config/site';
 const Header = () => {
   return (
     <header className="sticky top-0 z-50" style={{ backgroundColor: '#48525e', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
-      <div className="container mx-auto px-6 md:px-12 py-6">
+      <div className="container mx-auto px-6 md:px-12 py-10">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-6">
@@ -16,7 +16,7 @@ const Header = () => {
               alt="Logo Lopes Pinto Advogados"
               width={300}
               height={300}
-              className="rounded-sm"
+              className="w-20 h-auto"
             />
           </div>
 
