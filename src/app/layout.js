@@ -1,13 +1,15 @@
 import '@/styles/globals.css'
 import { siteConfig } from '@/config/site'
 
+export const viewport = 'width=device-width, initial-scale=1'
+
 export const metadata = {
   title: siteConfig.seo.title,
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords.join(', '),
   authors: [{ name: siteConfig.seo.author }],
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+  metadataBase: new URL('https://lopespinto.adv.br'),
   openGraph: {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
