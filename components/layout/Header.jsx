@@ -21,7 +21,7 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-base">
+          <nav className="flex gap-16">
             <Link href="/" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
               Home
             </Link>
