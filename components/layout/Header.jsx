@@ -21,7 +21,7 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="flex space-x-12">
+          <nav className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-base">
             <Link href="/" className="text-white hover:opacity-80 transition-fast font-medium uppercase tracking-wider text-sm">
               Home
             </Link>
