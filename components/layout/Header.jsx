@@ -7,7 +7,7 @@ import { siteConfig } from '@/config/site';
 const Header = () => {
   // Classe padrão dos links
   const navLinkClass =
-    "text-white hover:text-[#b89652] transition-all duration-300 font-medium uppercase tracking-wider text-xs";
+    "text-white hover:text-[#b8892b] transition-all duration-300 font-medium uppercase tracking-wider text-xs";
 
   // Lista de links
   const navLinks = [
