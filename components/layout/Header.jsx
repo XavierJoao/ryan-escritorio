@@ -27,8 +27,8 @@ const Header = () => {
       }}
     >
       <div className="container mx-auto px-6 md:px-12 py-10">
-        <div className="flex items-center gap-12">
-          
+        <div className="flex items-center justify-between w-full">
+
           {/* Logo */}
           <div className="flex items-center">
             <Image
@@ -41,12 +41,20 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="flex gap-16">
+          <nav className="flex items-center gap-12">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className={navLinkClass}>
                 {link.label}
               </Link>
             ))}
+
+            {/* Botão Área do Cliente*/}
+            <Link
+              href="/area-do-cliente"
+              className="bg-[#b8892b] text-white px-5 py-2 rounded-md text-xs uppercase tracking-wider font-semibold hover:opacity-90 transition"
+            >
+              Área do Cliente
+            </Link>
           </nav>
 
         </div>
