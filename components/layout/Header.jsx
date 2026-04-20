@@ -32,7 +32,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Image
-              src="/images/logo/logo-header00.png"
+              src="/images/logo/image-Photoroom.png"
               alt="Logo Lopes Pinto Advogados"
               width={300}
               height={300}
@@ -58,7 +58,7 @@ const Header = () => {
               Área do Cliente
             </Link>
           </div>
-          
+
         </div>
       </div>
     </header >
