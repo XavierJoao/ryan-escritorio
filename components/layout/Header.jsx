@@ -27,7 +27,7 @@ const Header = () => {
       }}
     >
       <div className="container mx-auto px-6 md:px-12 py-10">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center w-full">
 
           {/* Logo */}
           <div className="flex items-center">
@@ -36,30 +36,32 @@ const Header = () => {
               alt="Logo Lopes Pinto Advogados"
               width={300}
               height={300}
-              className="w-20 h-auto"
+              className="w-24 h-auto"
             />
           </div>
 
           {/* Navigation */}
-          <nav className="flex items-center gap-12">
+          <nav className="ml-10 flex items-center gap-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className={navLinkClass}>
                 {link.label}
               </Link>
             ))}
+          </nav>
 
-            {/* Botão Área do Cliente*/}
+          {/* Botão Área do Cliente*/}
+          <div className="ml-auto">
             <Link
               href="/area-do-cliente"
-              className="bg-[#b8892b] text-white px-5 py-2 rounded-md text-xs uppercase tracking-wider font-semibold hover:opacity-90 transition"
+              className="bg-[#b8892b] text-white px-6 py-3 rounded-md text-[11px] uppercase tracking-wider font-semibold hover:opacity-90 transition"
             >
               Área do Cliente
             </Link>
-          </nav>
-
+          </div>
+          
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 
